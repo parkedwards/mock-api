@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const pg = require('pg');
 
+const PORT = process.env.PORT || 3000;
 
 const db = new pg.Pool({
   host: 'ec2-23-21-224-199.compute-1.amazonaws.com',
@@ -73,4 +74,4 @@ app.post('/authenticate', (req, res) => {
   });
 });
 
-app.listen(3000, () => { console.log('listening on port 3000!'); })
+app.listen(PORT, () => { console.log(`listening on port ${PORT}!`); })
