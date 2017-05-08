@@ -35,6 +35,10 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', (req, res) => {
+  return res.status(200).send('heyo');
+})
+
+app.get('/users', (req, res) => {
   db.query('select * from users', (err, users) => {
     if (err) { return res.status(400).json(err) }
     return res.status(202).json(users);
