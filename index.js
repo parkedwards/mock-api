@@ -34,6 +34,13 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+app.get('/', (req, res) => {
+  db.query('select * from users', (err, users) => {
+    if (err) { return res.status(400).json(err) }
+    return res.status(202).json(users);
+  })
+})
+
 app.post('/create', (req, res) => {
   console.log(req.body);
   const { username, password, first_name, last_name } = req.body;
