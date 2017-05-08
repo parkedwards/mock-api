@@ -6,11 +6,11 @@ const pg = require('pg');
 
 
 const db = new pg.Pool({
-  host: 'ec2-54-221-244-196.compute-1.amazonaws.com',
-  user: 'tixkzapaffqpnf',
-  password: 'ff0364524f81921f78470399e8b91966de6cb8d93ddf6d3878965eb31ab13325',
+  host: 'ec2-23-21-224-199.compute-1.amazonaws.com',
+  user: 'pnjbvhhzbtyqau',
+  password: '279117c43900cebd4a023349a90b72dc219a2beeb257aa72bc990fbfc3c720bb',
   port: '5432',
-  database: 'deh981f75889h1',
+  database: 'd5m1l1dsgrghdi',
   ssl: true
 });
 
