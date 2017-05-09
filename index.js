@@ -31,9 +31,8 @@ db.query(`create table if not exists "users" (
   });
 
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -61,8 +60,8 @@ app.post('/create', (req, res) => {
 })
 
 app.post('/authenticate', (req, res) => {
-  const { username, password } = req.body;
-  db.query('select password from users where username= $1 limit 1', [username], (err, user) => {
+  let { username, password } = req.body;
+  db.query('select * from users where username= $1 limit 1', [username], (err, user) => {
     if (err) {
       console.error(err);
       return res.status(400).json(err);
@@ -72,7 +71,14 @@ app.post('/authenticate', (req, res) => {
     const db_password = user.rows[0].password;
     if (db_password !== password) return res.status(402).send(`incorrect password`);
 
-    return res.status(201).send(`successfully logged in as ${username}`);
+    let retrievedUser = {
+      _id,
+      username,
+      first_name,
+      last_name,
+    } = user.rows[0];
+    
+    return res.status(201).json(retrievedUser);
   });
 });
 
