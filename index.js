@@ -71,13 +71,15 @@ app.post('/authenticate', (req, res) => {
     const db_password = user.rows[0].password;
     if (db_password !== password) return res.status(402).send(`incorrect password`);
 
+    // Object destructuring includes all k/v pairs for some reason
+    // something about the 'anonymous' type that returns from query
     let retrievedUser = {
-      _id,
-      username,
-      first_name,
-      last_name,
-    } = user.rows[0];
-    
+      _id: user.rows[0]._id,
+      username: user.rows[0].username,
+      first_name: user.rows[0].first_name,
+      last_name: user.rows[0].last_name
+    };
+
     return res.status(201).json(retrievedUser);
   });
 });
