@@ -3,8 +3,9 @@ const app = express();
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const pg = require('pg');
+const fs = require('fs');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3004;
 
 const db = new pg.Pool({
   host: 'ec2-23-21-224-199.compute-1.amazonaws.com',
@@ -40,11 +41,20 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/products', (req, res) => {
+  fs.readFile('db.json', 'utf8', function (err, data) {
+    if (err) throw err;
+    let obj = JSON.parse(data);
+    res.status(202).json(obj.products);
+  });
+});
+
 app.get('/users', (req, res) => {
-  db.query('select * from users', (err, users) => {
-    if (err) { return res.status(400).json(err) }
-    return res.status(202).json(users);
-  })
+  fs.readFile('db.json', 'utf8', function (err, data) {
+    if (err) throw err;
+    let obj = JSON.parse(data);
+    res.status(202).json(obj.users);
+  });
 })
 
 app.post('/create', (req, res) => {
