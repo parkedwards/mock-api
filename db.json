@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "user_id": 12389742,
+      "name": "lebron james",
+      "points_balance": 1000
+    }
+  ],
+  "products": [
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 100,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "oooga boog this is a placeholder description whoopdee doo",
+      "quantity": 0
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 100,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "singing songs of the old days makes you cranky and grey",
+      "quantity": 1
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 100,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 3
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 100,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 0
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 100,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 10
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 100,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 4
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 100,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 2
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 150,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 6
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 150,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 0
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 150,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 8
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 150,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 5
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 200,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 3
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 200,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 8
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 200,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 0
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 200,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 0
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 200,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 4
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 200,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 2
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 250,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 6
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 250,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 4
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 250,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 0
+    },
+    {
+      "title": "XOXO - Candle & Bath Bomb Set - Inner Circle",
+      "price": 250,
+      "img_url": "https://cdn.shopify.com/s/files/1/0548/5721/products/xoxo_gift_set_3f66189b-4a15-41b3-9c5a-68c10b6f83e7_large.png?v=1494551020",
+      "desc": "this is a placeholder description.  real description will be much longer than this",
+      "quantity": 8
+    }
+  ]
+}
