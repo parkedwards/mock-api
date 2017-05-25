@@ -3,7 +3,8 @@
     {
       "user_id": 12389742,
       "name": "lebron james",
-      "points_balance": 1000
+      "points_balance": 1000,
+      "status": "gold"
     }
   ],
   "products": [
