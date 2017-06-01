@@ -85,8 +85,8 @@ app.post('/login', (req, res) => {
     for (let i = 0; i < users.length; i++) {
       if (users[i].email === req.body.email && users[i].password === req.body.password) {
         console.log(users[i]);
-        const { user_id, firstName, last_name, points_balance, status, next_level } = users[i];
-        return res.status(201).json({ user_id, firstName, last_name, points_balance, status, next_level });
+        const { email, user_id, first_name, last_name, points_balance, status, next_level } = users[i];
+        return res.status(201).json({ email, user_id, first_name, last_name, points_balance, status, next_level });
       }
     }
     return res.status(402).json('incorrect login info');
