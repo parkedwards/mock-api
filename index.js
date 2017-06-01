@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const pg = require('pg');
 const fs = require('fs');
+const uuid = require('uuid');
 
 const PORT = process.env.PORT || 3004;
 
@@ -58,40 +59,78 @@ app.get('/users', (req, res) => {
 })
 
 app.post('/create', (req, res) => {
-  console.log(req.body);
-  const { username, password, first_name, last_name } = req.body;
-  db.query('insert into users (username, password, first_name, last_name) values ($1, $2, $3, $4)', [username, password, first_name, last_name], (err) => {
-    if (err) {
-      return res.status(400).json(err);
-    }
+  fs.readFile('db.json', 'utf8', (err, data) => {
+    if (err) throw err;
+    const db = JSON.parse(data);
 
-    return res.status(201).send(`Successfully inserted ${username}`);
+    db.users.push(Object.assign({}, req.body, {
+      user_id: uuid(),
+      points_balance: 0,
+      status: 'gold',
+      next_level: 'platinum',
+    }));
+
+    fs.writeFile('db.json', JSON.stringify(db), 'utf8', (err) => {
+      if (err) throw err;
+      console.log('done');
+      return res.status(203).json({ email: req.body.email, password: req.body.password });
+    });
+  });
+});
+
+app.post('/login', (req, res) => {
+  fs.readFile('db.json', 'utf8', (err, data) => {
+    if (err) throw err;
+    let users = JSON.parse(data).users;
+    for (let i = 0; i < users.length; i++) {
+      if (users[i].email === req.body.email && users[i].password === req.body.password) {
+        console.log(users[i]);
+        const { user_id, firstName, last_name, points_balance, status, next_level } = users[i];
+        return res.status(201).json({ user_id, firstName, last_name, points_balance, status, next_level });
+      }
+    }
+    return res.status(402).json('incorrect login info');
   })
 })
 
-app.post('/authenticate', (req, res) => {
-  let { username, password } = req.body;
-  db.query('select * from users where username= $1 limit 1', [username], (err, user) => {
-    if (err) {
-      console.error(err);
-      return res.status(400).json(err);
-    }
 
-    if (!user.rows[0]) return res.status(401).send(`no users found`);
-    const db_password = user.rows[0].password;
-    if (db_password !== password) return res.status(402).send(`incorrect password`);
 
-    // Object destructuring includes all k/v pairs for some reason
-    // something about the 'anonymous' type that returns from query
-    let retrievedUser = {
-      _id: user.rows[0]._id,
-      username: user.rows[0].username,
-      first_name: user.rows[0].first_name,
-      last_name: user.rows[0].last_name
-    };
+// ====================================================================================================
 
-    return res.status(201).json(retrievedUser);
-  });
-});
+// app.post('/create', (req, res) => {
+//   const { username, password, first_name, last_name } = req.body;
+//   db.query('insert into users (username, password, first_name, last_name) values ($1, $2, $3, $4)', [username, password, first_name, last_name], (err) => {
+//     if (err) {
+//       return res.status(400).json(err);
+//     }
+
+//     return res.status(201).send(`Successfully inserted ${username}`);
+//   })
+// })
+
+// app.post('/authenticate', (req, res) => {
+//   let { username, password } = req.body;
+//   db.query('select * from users where username= $1 limit 1', [username], (err, user) => {
+//     if (err) {
+//       console.error(err);
+//       return res.status(400).json(err);
+//     }
+
+//     if (!user.rows[0]) return res.status(401).send(`no users found`);
+//     const db_password = user.rows[0].password;
+//     if (db_password !== password) return res.status(402).send(`incorrect password`);
+
+//     // Object destructuring includes all k/v pairs for some reason
+//     // something about the 'anonymous' type that returns from query
+//     let retrievedUser = {
+//       _id: user.rows[0]._id,
+//       username: user.rows[0].username,
+//       first_name: user.rows[0].first_name,
+//       last_name: user.rows[0].last_name
+//     };
+
+//     return res.status(201).json(retrievedUser);
+//   });
+// });
 
 app.listen(PORT, () => { console.log(`listening on port ${PORT}!`); })
