@@ -3,10 +3,15 @@
 ## API Endpoints
 
 ### To pull list of products:
+```GET```
 https://infinite-crag-99070.herokuapp.com/products
 
-### To create user:
+### To pull all users
 ```GET```
+https://infinite-crag-99070.herokuapp.com/users
+
+### To create user:
+```POST```
 https://infinite-crag-99070.herokuapp.com/create
 ```javascript
   const body = {
@@ -18,15 +23,11 @@ https://infinite-crag-99070.herokuapp.com/create
 ```
 
 ### To Authenticate:
-https://infinite-crag-99070.herokuapp.com/authenticate
-```javascript
+```POST```
+https://infinite-crag-99070.herokuapp.com/login
+```javascript 
   const body = {
-    username,
+    email,
     password,
-    first_name,
-    last_name
   }
 ```
-
-### To pull all records
-https://infinite-crag-99070.herokuapp.com/users
