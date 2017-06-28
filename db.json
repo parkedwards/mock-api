@@ -1,14 +1,16 @@
 {
   "users": [
     {
-      "user_id": 12389742,
+      "user_id": "12389742",
       "first_name": "lebron",
       "last_name": "james",
       "email": "a@a.com",
       "password": "pw",
       "points_balance": 1000,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": "1989-06-20",
+      "gift_claim_date": null
     },
     {
       "first_name": "kevin",
@@ -18,7 +20,9 @@
       "user_id": "1cf76d68-8200-4d0f-85b2-17b13c68a4ee",
       "points_balance": 0,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": "1989-06-20",
+      "gift_claim_date": "2016-06-28"
     },
     {
       "first_name": "jamaal",
@@ -28,7 +32,9 @@
       "user_id": "195041c7-aa3a-4451-aa37-a471cf82b7d0",
       "points_balance": 0,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": null,
+      "gift_claim_date": null
     },
     {
       "first_name": "bill",
@@ -38,7 +44,9 @@
       "user_id": "6ec1d387-faca-40be-b428-62c109501c9d",
       "points_balance": 0,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": null,
+      "gift_claim_date": null
     },
     {
       "first_name": "chris",
@@ -48,7 +56,9 @@
       "user_id": "623651c9-932a-40a5-a099-15c3510e4890",
       "points_balance": 0,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": null,
+      "gift_claim_date": null
     },
     {
       "first_name": "blake",
@@ -58,7 +68,9 @@
       "user_id": "63f3f35c-f768-4037-ab8b-0ff9edfa733d",
       "points_balance": 0,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": null,
+      "gift_claim_date": null
     },
     {
       "first_name": "jared",
@@ -68,7 +80,9 @@
       "user_id": "d76adc52-b548-4510-a161-c2fff4c27c3f",
       "points_balance": 0,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": null,
+      "gift_claim_date": null
     },
     {
       "first_name": "jared",
@@ -78,7 +92,9 @@
       "user_id": "2d35446f-d198-4f36-b054-0c92b5e43388",
       "points_balance": 0,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": null,
+      "gift_claim_date": null
     },
     {
       "first_name": "chris",
@@ -88,7 +104,9 @@
       "user_id": "68eb7912-85ec-46b5-9920-8b4bb1ccb48c",
       "points_balance": 0,
       "status": "gold",
-      "next_level": "platinum"
+      "next_level": "platinum",
+      "birthday": null,
+      "gift_claim_date": null
     },
     {
       "first_name": "deron",
@@ -96,6 +114,30 @@
       "email": "dw@dw.com",
       "password": "pw",
       "user_id": "70a9b58f-52e7-43c5-a207-4ead1401f5dd",
+      "points_balance": 0,
+      "status": "gold",
+      "next_level": "platinum",
+      "birthday": null,
+      "gift_claim_date": null
+    },
+    {
+      "first_name": "eddie",
+      "last_name": "park",
+      "email": "asdf@asdf.com",
+      "password": "pw",
+      "birthday": "1989-03-28",
+      "user_id": "806e3d4b-310b-4816-b117-b31386047d1c",
+      "points_balance": 0,
+      "status": "gold",
+      "next_level": "platinum"
+    },
+    {
+      "first_name": "trevor",
+      "last_name": "noah",
+      "email": "asdf@asdf.com",
+      "password": "password",
+      "birthday": "1989-03-28",
+      "user_id": "b990c837-ea52-4bdc-b7fc-38c8907df761",
       "points_balance": 0,
       "status": "gold",
       "next_level": "platinum"
